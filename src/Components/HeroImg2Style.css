@@ -1,0 +1,44 @@
+.hero-img{
+    width: 100%;
+    height: 90vh;
+}
+.intro-img{
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+    /* width: 100%;
+    height: 100%; */
+}
+.heading{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    
+}
+.heading h1{
+    font-size: 60px;
+    color: red;
+}
+.heading p{
+    font-size: 35px;
+}
+
+
+@media screen and (max-width : 640px) {
+    .heading{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        text-align: center; 
+    }
+    .heading h1{
+        font-size: 50px;
+    }
+    .heading p{
+        font-size: 30px;
+    }
+    .hero-img{
+        height: 60vh;
+    }
+}

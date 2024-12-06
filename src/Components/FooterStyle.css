@@ -1,0 +1,28 @@
+.footer{
+    background-color: rgba(19, 19, 19, 0.8);
+    width: 100%;
+    margin-top: 100px;
+}
+.footer p{
+    padding: 20px 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+.footer p span{
+    color: red;
+}
+.footer p .copy{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 640px) {
+     .footer{
+        background-color: rgba(19, 19, 19, 0.8);
+        width: 100%;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+}

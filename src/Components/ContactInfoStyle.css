@@ -1,0 +1,95 @@
+.heading-cont h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.contact{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 50%;
+    color: #676767;
+    margin-left: 70px;
+}
+.contact-col h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col h3 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.contact-col p{
+    max-width: 500px;
+    list-style: 0.3;
+    font-size: 20px;
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #4260f6;
+    font-size: 20px;
+}
+.contact-col li a:hover{
+    text-decoration: none;
+}
+.contact-col ul li img{
+    width: 23px;
+    margin-right: 10px;
+    margin-left: -30px;
+}
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background: #e1e2fc;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+.contact-col span{
+    display: block;
+    margin: 20px 0;
+}
+.contact-col .send-btn{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+}
+
+
+/* --------- media query --------- */
+
+
+@media (max-width: 700px) {
+    .contact{
+        display: block;
+    }
+    .contact-col{
+        padding: 20px;
+        margin-left: 0;
+    }
+    .contact-col h3, p{
+        font-size: 20px;
+    }
+    .contact-col ul li{
+      font-size: 15px;
+    }
+    .contact-col .send-btn{
+        text-align: center;
+        align-items: center;
+        margin-left: 80px;
+    }
+}

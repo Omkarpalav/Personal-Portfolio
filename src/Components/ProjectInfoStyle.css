@@ -1,0 +1,113 @@
+.main{
+    width: 100%;
+    padding: 0px 90px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.main h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.images{
+    padding-bottom: 1rem;
+  
+}
+/* .work-list{
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+} */
+.work{
+    position: relative;
+    margin: 0 2rem;
+    width: 100%;
+    
+}
+/* .work img{
+    height: 60vh; 
+    width: 100%;
+} */
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-gap: 40px; /* Adjust the gap between images */
+  }
+  
+  .work img{
+    width: 100%; /* Each image takes up 100% of its grid cell */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h2{
+    color: beige
+}
+.work:hover .layer{
+    height: 100%;
+}
+.icon{
+    font-size: 30px;
+    color: aqua;
+}
+.main Button{
+    margin-left: 580px;
+    margin-top: 30px;
+   
+}
+
+@media screen and (max-width : 640px) {
+    .main h1{
+        font-size: 2.3rem;
+        padding-bottom: 0rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .main{
+        width: 100%;
+        padding: 0px 30px;
+        margin-top: 30px;
+    }
+  
+    .work-list{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .work{
+        width: 100%;
+        margin: 0.8rem 0rem; 
+    }
+    .work img{
+        height: 45vh; 
+        width: 100%; 
+        border-radius: 10px; 
+    }
+    .main Button{
+        margin-left: 80px;
+       
+    }
+    .work-list {
+        grid-template-columns: repeat(1, 1fr); 
+      }
+      .work img{
+        width: 100%; 
+        
+      }
+}
